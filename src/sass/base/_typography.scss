@@ -10,10 +10,14 @@ h1,
 h2,
 h3,
 h4 {
-  color: var.$color-title;
   font-weight: var.$font-bold;
+  color: var.$color-title;
 }
 
 a {
   text-decoration: none;
+}
+
+i.uil {
+  font-size: var.$headline-3;
 }

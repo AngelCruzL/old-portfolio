@@ -1,0 +1,8 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+
+.u-wrapper {
+  max-inline-size: 768px;
+  margin-inline: auto;
+  padding-inline: var.$gap-1-5;
+}

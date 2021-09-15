@@ -7,8 +7,9 @@
 }
 
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
 
 ul {
   list-style: none;
+  padding-inline: 0;
 }
 
 img {

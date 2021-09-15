@@ -19,6 +19,25 @@ $font-bold: 700;
   $h3-font-size: 2.4rem;
 }
 
+// Colors
+$color-hue: 230;
+$color-white: #fff;
+
+/* HSL color mode */
+$color-primary: hsl($color-hue, 69%, 61%);
+$color-primary-alt: hsl($color-hue, 57%, 53%);
+$color-primary-lighter: hsl($color-hue, 92%, 85%);
+$color-title: hsl($color-hue, 8%, 15%);
+$color-text: hsl($color-hue, 8%, 45%);
+$color-text-light: hsl($color-hue, 8%, 65%);
+$color-input: hsl($color-hue, 70%, 96%);
+$color-body: hsl($color-hue, 60%, 99%);
+$color-shadow: rgba(0, 0, 0, 0.15);
+
+$container-color: $color-white;
+$scroll-bar-color: hsl($color-hue, 12%, 90%);
+$scroll-thumb-color: hsl($color-hue, 12%, 80%);
+
 // Media Queries
 $phone: 480px;
 $tablet: 768px;
@@ -41,20 +60,4 @@ $z-modal: 15;
 
 $header-height: 4.8rem;
 
-// Colors
-$color-hue: 230;
-$color-white: #fff;
-
-/* HSL color mode */
-$color-primary: hsl($color-hue, 69%, 61%);
-$color-primary-alt: hsl($color-hue, 57%, 53%);
-$color-primary-lighter: hsl($color-hue, 92%, 85%);
-$color-title: hsl($color-hue, 8%, 15%);
-$color-text: hsl($color-hue, 8%, 45%);
-$color-text-light: hsl($color-hue, 8%, 65%);
-$color-input: hsl($color-hue, 70%, 96%);
-$color-body: hsl($color-hue, 60%, 99%);
-
-$container-color: $color-white;
-$scroll-bar-color: hsl($color-hue, 12%, 90%);
-$scroll-thumb-color: hsl($color-hue, 12%, 80%);
+$box-shadow: 0 -1px 4px $color-shadow;

@@ -1,0 +1,76 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  block-size: var.$header-height;
+  max-inline-size: 968px;
+
+  &__logo,
+  &__toggle,
+  .change-theme {
+    cursor: pointer;
+    font-weight: var.$font-medium;
+    color: var.$color-title;
+
+    &:hover {
+      color: var.$color-primary;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: var.$gap-0-5;
+  }
+
+  &__list {
+    @include mixin.grid(3, var.$gap-2 var.$gap-0-75);
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var.$color-title;
+    font-weight: var.$font-medium;
+
+    &:hover {
+      color: var.$color-primary;
+    }
+  }
+
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    inset-block-end: 0.8rem;
+    inset-inline-end: 2.1rem;
+    font-size: 2.4rem;
+    color: var.$color-primary;
+
+    &:hover {
+      color: var.$color-primary-alt;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    inset-block-end: -100%;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    background: var.$color-body;
+    padding-block: 32px 64px;
+    padding-inline: 24px;
+    box-shadow: var.$box-shadow;
+    border-radius: 24px 24px 0 0;
+    transition: 0.3s;
+  }
+}
+
+.show-menu {
+  inset-block-end: 0;
+}

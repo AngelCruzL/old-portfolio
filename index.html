@@ -4,10 +4,71 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <title>Ángel Cruz | Web Developer</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header" id="header">
+      <nav class="nav u-wrapper">
+        <a href="#" class="nav__logo">Ángel Cruz</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="nav__icon uil uil-estate"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="nav__icon uil uil-user"></i>About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="nav__icon uil uil-file-alt"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="nav__icon uil uil-briefcase"></i> Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="nav__icon uil uil-scenery"></i>Portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="nav__icon uil uil-message"></i>Contact me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
