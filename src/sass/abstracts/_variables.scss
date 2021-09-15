@@ -46,15 +46,15 @@ $color-hue: 230;
 $color-white: #fff;
 
 /* HSL color mode */
-$color-primary: hsl(var($color-hue), 69%, 61%);
-$color-primary-alt: hsl(var($color-hue), 57%, 53%);
-$color-primary-lighter: hsl(var($color-hue), 92%, 85%);
-$color-title: hsl(var($color-hue), 8%, 15%);
-$color-text: hsl(var($color-hue), 8%, 45%);
-$color-text-light: hsl(var($color-hue), 8%, 65%);
-$color-input: hsl(var($color-hue), 70%, 96%);
-$color-body: hsl(var($color-hue), 60%, 99%);
+$color-primary: hsl($color-hue, 69%, 61%);
+$color-primary-alt: hsl($color-hue, 57%, 53%);
+$color-primary-lighter: hsl($color-hue, 92%, 85%);
+$color-title: hsl($color-hue, 8%, 15%);
+$color-text: hsl($color-hue, 8%, 45%);
+$color-text-light: hsl($color-hue, 8%, 65%);
+$color-input: hsl($color-hue, 70%, 96%);
+$color-body: hsl($color-hue, 60%, 99%);
 
 $container-color: $color-white;
-$scroll-bar-color: hsl(var($color-hue), 12%, 90%);
-$scroll-thumb-color: hsl(var($color-hue), 12%, 80%);
+$scroll-bar-color: hsl($color-hue, 12%, 90%);
+$scroll-thumb-color: hsl($color-hue, 12%, 80%);
