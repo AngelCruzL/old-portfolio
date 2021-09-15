@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as var;
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin-block: 0 var.$header-height;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  background: var.$color-body;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  block-size: auto;
+  max-inline-size: 100%;
+}
