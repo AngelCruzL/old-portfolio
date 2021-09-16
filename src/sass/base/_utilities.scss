@@ -11,3 +11,22 @@
   display: grid;
   gap: var.$gap-1-5;
 }
+
+.section {
+  padding-block: var.$gap-1-5 var.$gap-3;
+
+  &__title {
+    font-size: var.$headline-2;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: var.$small-font;
+    margin-block-end: var.$gap-3;
+  }
+
+  &__title,
+  &__subtitle {
+    text-align: center;
+  }
+}

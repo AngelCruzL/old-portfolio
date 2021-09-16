@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+
+.about {
+  &__img {
+    inline-size: 200px;
+    border-radius: 8px;
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__description {
+    text-align: center;
+    margin-block-end: var.$gap-2-5;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block-end: var.$gap-2-5;
+  }
+
+  &__info-title {
+    font-size: var.$headline-2;
+    font-weight: var.$font-bold;
+    color: var.$color-title;
+  }
+
+  &__info-name {
+    font-size: var.$smaller-font;
+  }
+
+  &__info-title,
+  &__info-name {
+    display: block;
+    text-align: center;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
