@@ -1,28 +1,25 @@
-@use '../abstracts/variables' as var;
-@use '../abstracts/mixins' as mixin;
-
 .u-wrapper {
   margin-inline: auto;
-  padding-inline: var.$gap-1-5;
+  padding-inline: var(--gap-1-5);
   max-inline-size: 816px;
 }
 
 .u-grid {
   display: grid;
-  gap: var.$gap-1-5;
+  gap: var(--gap-1-5);
 }
 
 .section {
-  padding-block: var.$gap-1-5 var.$gap-3;
+  padding-block: var(--gap-1-5) var(--gap-3);
 
   &__title {
-    font-size: var.$headline-2;
+    font-size: var(--headline-2);
   }
 
   &__subtitle {
     display: block;
-    font-size: var.$small-font;
-    margin-block-end: var.$gap-3;
+    font-size: var(--small-font);
+    margin-block-end: var(--gap-3);
   }
 
   &__title,

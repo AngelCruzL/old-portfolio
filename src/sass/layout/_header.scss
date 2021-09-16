@@ -1,11 +1,8 @@
-@use '../abstracts/variables' as var;
-@use '../abstracts/mixins' as mixin;
-
 .header {
   position: fixed;
   inline-size: 100%;
   inset-block-end: 0;
   inset-inline-start: 0;
-  z-index: var.$z-fixed;
-  background: var.$color-body;
+  z-index: var(--z-fixed);
+  background: var(--color-body);
 }

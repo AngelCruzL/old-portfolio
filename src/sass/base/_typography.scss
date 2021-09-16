@@ -1,9 +1,7 @@
-@use '../abstracts/variables' as var;
-
 body {
-  font-family: var.$font-primary;
-  font-size: var.$body;
-  color: var.$color-text;
+  font-family: var(--font-primary);
+  font-size: var(--body);
+  color: var(--color-text);
 }
 
 h1,
@@ -11,9 +9,9 @@ h2,
 h3,
 h4 {
   margin-block: 0;
-  font-weight: var.$font-bold;
+  font-weight: var(--font-bold);
   line-height: 1.2;
-  color: var.$color-title;
+  color: var(--color-title);
 }
 
 a {
@@ -21,5 +19,5 @@ a {
 }
 
 i.uil {
-  font-size: var.$headline-3;
+  font-size: var(--headline-3);
 }

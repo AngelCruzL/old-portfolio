@@ -1,65 +1,83 @@
-@use '../abstracts/variables' as var;
 @use '../abstracts/mixins' as mixin;
 
 .home {
   &__container {
-    gap: var.$gap-1;
+    gap: var(--gap-1);
   }
 
   &__content {
     grid-template-columns: 0.5fr 3fr;
-    padding-block-start: var.$gap-3;
+    padding-block-start: var(--gap-3);
     align-items: center;
+
+    @include mixin.respond(tablet) {
+      grid-template-columns: max-content 1fr 1fr;
+    }
   }
 
   &__social {
     display: grid;
     grid-template-columns: max-content;
-    row-gap: var.$gap-0-75;
+    row-gap: var(--gap-0-75);
+
+    @include mixin.respond(desktop) {
+      transform: translateX(-96px);
+    }
 
     &-icon {
-      color: var.$color-primary;
+      color: var(--color-primary);
 
       &:hover {
-        color: var.$color-primary-alt;
+        color: var(--color-primary-alt);
       }
     }
   }
 
   &__blob {
     inline-size: 200px;
-    fill: var.$color-primary;
+    fill: var(--color-primary);
 
     &-img {
       inline-size: 170px;
     }
   }
 
+  &__img {
+    @include mixin.respond(tablet) {
+      order: 1;
+      justify-self: center;
+    }
+  }
+
   &__data {
     grid-column: 1 / 3;
+
+    @include mixin.respond(tablet) {
+      grid-column: initial;
+    }
   }
 
   &__title {
-    font-size: var.$big-font-size;
+    font-size: var(--big-font-size);
 
     span {
       display: block;
-      font-size: var.$headline-1;
-      color: var.$color-text;
-      font-weight: var.$font-medium;
-      margin-block-end: var.$gap-2;
+      font-size: var(--headline-1);
+      color: var(--color-text);
+      font-weight: var(--font-medium);
+      margin-block-end: var(--gap-2);
     }
   }
 
   &__description {
-    margin-block-end: var.$gap-2;
+    margin-block-end: var(--gap-2);
   }
 
   & &__scroll {
     display: none;
 
     &-button {
-      color: var.$color-primary;
+      color: var(--color-primary);
       transition: 0.3s;
 
       &:hover {
@@ -72,10 +90,10 @@
     }
 
     &-name {
-      font-size: var.$small-font;
-      color: var.$color-title;
-      font-weight: var.$font-medium;
-      margin-inline-end: var.$gap-0-25;
+      font-size: var(--small-font);
+      color: var(--color-title);
+      font-weight: var(--font-medium);
+      margin-inline-end: var(--gap-0-25);
     }
 
     &-arrow {

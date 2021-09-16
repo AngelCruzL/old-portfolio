@@ -1,33 +1,43 @@
-@use '../abstracts/variables' as var;
 @use '../abstracts/mixins' as mixin;
 
 .about {
+  &__container {
+    @include mixin.respond(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: var(--gap-3-5);
+    }
+  }
+
   &__img {
-    inline-size: 200px;
-    border-radius: 8px;
     justify-self: center;
     align-self: center;
+    inline-size: 200px;
+    border-radius: 8px;
   }
 
   &__description {
+    margin-block-end: var(--gap-2-5);
     text-align: center;
-    margin-block-end: var.$gap-2-5;
+
+    @include mixin.respond(tablet) {
+      text-align: start;
+    }
   }
 
   &__info {
     display: flex;
     justify-content: space-evenly;
-    margin-block-end: var.$gap-2-5;
+    margin-block-end: var(--gap-2-5);
   }
 
   &__info-title {
-    font-size: var.$headline-2;
-    font-weight: var.$font-bold;
-    color: var.$color-title;
+    font-size: var(--headline-2);
+    font-weight: var(--font-bold);
+    color: var(--color-title);
   }
 
   &__info-name {
-    font-size: var.$smaller-font;
+    font-size: var(--smaller-font);
   }
 
   &__info-title,
