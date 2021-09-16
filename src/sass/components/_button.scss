@@ -1,0 +1,51 @@
+@use '../abstracts/variables' as var;
+
+.button {
+  display: inline-block;
+  background: var.$color-primary;
+  color: #fff;
+  padding-block: var.$gap-1;
+  padding-inline: var.$gap-1;
+  border-radius: 0.8rem;
+  font-weight: var.$font-medium;
+
+  &:hover {
+    background: var.$color-primary-alt;
+  }
+
+  & &__icon {
+    font-size: 2.4rem;
+    margin-inline-start: var.$gap-0-5;
+    transition: 0.3s;
+  }
+
+  &--white {
+    background: #fff;
+    color: var.$color-primary;
+
+    &:hover {
+      background: #fff;
+    }
+  }
+
+  &--flex {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &--small {
+    padding-block: 1.2rem;
+    padding-inline: 1.6rem;
+  }
+
+  &--link {
+    padding: 0;
+    background: transparent;
+    color: var.$color-primary;
+
+    &:hover {
+      background: transparent;
+      color: var.$color-primary-alt;
+    }
+  }
+}
