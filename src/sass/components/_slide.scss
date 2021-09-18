@@ -1,0 +1,52 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mixin;
+
+.card {
+  display: grid;
+  margin-inline: auto;
+  max-inline-size: 650px;
+  border-radius: 1.2rem;
+  background: var(--slider-color);
+  box-shadow: 0 -0 15px 1px rgba(0, 0, 0, 0.05);
+
+  @include mixin.respond(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__data {
+    display: grid;
+    gap: var(--gap-0-5);
+    padding-block: var(--gap-2);
+    padding-inline: var(--gap-1-5);
+  }
+
+  &__image {
+    align-self: stretch;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  &__title {
+    font-size: var(--headline-3);
+    text-align: center;
+  }
+
+  &__description {
+    display: inline-block;
+    block-size: 10.5rem;
+    font-size: var(--small-font);
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__button {
+    padding-block: var(--gap-0-75);
+    inline-size: 100%;
+    cursor: pointer;
+    border: none;
+    background: var(--color-primary);
+    border-radius: 0.8rem;
+    font: var(--font-medium) var(--body) / normal var(--font-primary);
+    color: var(--color-white);
+  }
+}

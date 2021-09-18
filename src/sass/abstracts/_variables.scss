@@ -44,12 +44,11 @@
   --color-input: hsl(var(--color-hue), 70%, 96%);
   --color-body: hsl(var(--color-hue), 60%, 99%);
   --color-shadow: rgba(0, 0, 0, 0.15);
-
+  --box-shadow: 0 -1px 4px var(--color-shadow);
   --container-color: --color-white;
   --scroll-bar-color: hsl(var(--color-hue), 12%, 90%);
   --scroll-thumb-color: hsl(var(--color-hue), 12%, 80%);
-
-  --box-shadow: 0 -1px 4px var(--color-shadow);
+  --slider-color: var(--color-body);
 }
 
 @media screen and (min-width: 968px) {
@@ -67,11 +66,12 @@ body.dark-theme {
   --color-text: hsl(var(--color-hue), 8%, 75%);
   --color-input: hsl(var(--color-hue), 29%, 16%);
   --color-body: hsl(var(--color-hue), 28%, 12%);
+  --color-shadow: rgba(255, 255, 255, 0.15);
+  --box-shadow: 0 -1px 4px var(--color-shadow);
   --container-color: hsl(var(--color-hue), 29%, 16%);
   --scroll-bar-color: hsl(var(--color-hue), 12%, 48%);
   --scroll-thumb-color: hsl(var(--color-hue), 12%, 36%);
-  --color-shadow: rgba(255, 255, 255, 0.15);
-  --box-shadow: 0 -1px 4px var(--color-shadow);
+  --slider-color: var(--color-primary-var);
 }
 
 // Media Queries

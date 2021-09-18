@@ -8,7 +8,11 @@ document.querySelector('.slider__bullet-list').addEventListener('click', e => {
   }
 });
 
-const slider = function () {
+setTimeout(() => {
+  slider();
+}, 500);
+
+function slider() {
   const $slides = document.querySelectorAll('.slider__slide');
   const $btnPrev = document.querySelector('.slider__prev');
   const $btnNext = document.querySelector('.slider__next');
@@ -88,6 +92,4 @@ const slider = function () {
     goToSlide(currentSlide);
     activateDots(currentSlide);
   }
-};
-
-slider();
+}
