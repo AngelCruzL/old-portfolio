@@ -1,0 +1,67 @@
+@use '../abstracts/mixins' as mixin;
+
+.contact {
+  &__container {
+    row-gap: var(--gap-3);
+  }
+
+  &__form {
+    @include mixin.respond(tablet) {
+      margin-inline: auto;
+      inline-size: 56rem;
+    }
+  }
+
+  &__inputs {
+    @include mixin.respond(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__information {
+    display: flex;
+    margin-block-end: var(--gap-2);
+  }
+
+  &__content {
+    background: var(--color-input);
+    border-radius: 8px;
+    padding-block: 12px 4px;
+    padding-inline: 16px;
+  }
+
+  &__label {
+    font-size: var(--smaller-font);
+    color: var(--color-title);
+  }
+
+  &__input {
+    inline-size: 100%;
+    background: var(--color-input);
+    color: var(--color-text);
+    font-family: var(--body);
+    font-size: var(--normal-font);
+    border: none;
+    outline: none;
+    padding-block: 4px 8px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-0-5);
+    padding-block: var(--gap-1);
+    inline-size: 100%;
+    cursor: pointer;
+    border: none;
+    background: var(--color-primary);
+    border-radius: 0.8rem;
+    font: var(--font-medium) var(--body) / normal var(--font-primary);
+    color: var(--color-white);
+
+    &__icon {
+      font-size: var(--headline-1);
+    }
+  }
+}
