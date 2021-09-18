@@ -68,7 +68,7 @@ function slider() {
   function goToSlide(slide) {
     document
       .querySelector(`#slide-${slide + 1}`)
-      .scrollIntoView({ behavior: 'smooth' });
+      .scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
   function nextSlide() {
