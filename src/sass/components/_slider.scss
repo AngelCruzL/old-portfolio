@@ -1,0 +1,58 @@
+.slider {
+  position: relative;
+
+  &__container {
+    display: block;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+  }
+
+  &__slide {
+    display: inline-block;
+    margin: 0;
+    inline-size: 100%;
+  }
+
+  & &__prev,
+  & &__next {
+    position: absolute;
+    inset-block-start: 50%;
+    font-size: 4rem;
+    transform: translateY(-75%);
+    color: var(--color-primary);
+    cursor: pointer;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 6rem;
+    }
+  }
+
+  &__prev {
+    inset-inline-start: var(--gap-0-25);
+  }
+
+  &__next {
+    inset-inline-end: var(--gap-0-25);
+  }
+
+  &__bullet-list {
+    margin-block-start: 10px;
+    margin-block-end: 50px;
+    text-align: center;
+
+    &-item {
+      display: inline-block;
+      block-size: 10px;
+      inline-size: 10px;
+      border-radius: 50%;
+      background: var(--color-title);
+      font-size: 0;
+
+      &--active {
+        background: var(--color-primary);
+      }
+    }
+  }
+}
