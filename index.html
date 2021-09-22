@@ -125,14 +125,15 @@
         129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
         -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
                   />
-                  <!-- TODO: Add profile image -->
                   <image
                     class="home__blob-img"
                     x="12"
-                    y="18"
-                    href=""
+                    y="1"
+                    href="./src/img/hero.png"
                     alt="Perfil"
                     title="Perfil"
+                    height="200"
+                    width="100"
                   />
                 </g>
               </svg>
@@ -167,8 +168,17 @@
         <!-- <span class="section__subtitle">&nbsp;</span> -->
 
         <div class="u-wrapper u-grid about__container">
-          <!-- TODO: Add about image -->
-          <img src="" alt="About image" class="about__img" />
+          <picture>
+            <source srcset="./src/img/about.avif" type="image/avif" />
+            <source srcset="./src/img/about.webp" type="image/webp" />
+            <img
+              src="./src/img/about.png"
+              alt="About image"
+              class="about__img"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
 
           <div class="about__data">
             <p class="about__description">
@@ -180,8 +190,7 @@
             </p>
 
             <div class="about__buttons">
-              <!-- TODO: Add CV file to download -->
-              <a download href="" class="button button--flex">
+              <a download href="./src/CV.pdf" class="button button--flex">
                 Descargar CV <i class="uil uil-download-alt button__icon"></i>
               </a>
             </div>
