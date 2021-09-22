@@ -51,16 +51,15 @@
 
   &__socials {
     display: flex;
-    gap: var(--gap-0-5);
+    gap: var(--gap-1);
 
     @include mixin.respond(tablet) {
-      gap: unset;
+      gap: var(--gap-1-5);
     }
   }
 
   &__social {
     font-size: var(--gap-1-5);
-    margin-inline-end: var(--gap-1-5);
   }
 
   &__social:hover {

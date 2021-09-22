@@ -19,6 +19,14 @@
     }
   }
 
+  &__icon,
+  &__close,
+  &__toggle {
+    @include mixin.respond(tablet) {
+      display: none;
+    }
+  }
+
   &__btns {
     display: flex;
     align-items: center;
@@ -27,6 +35,11 @@
 
   &__list {
     @include mixin.grid(3, var(--gap-2) var(--gap-0-75));
+
+    @include mixin.respond(tablet) {
+      display: flex;
+      column-gap: var(--gap-1-5);
+    }
   }
 
   &__link {

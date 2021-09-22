@@ -12,6 +12,8 @@
 
     @include mixin.respond(tablet) {
       grid-template-columns: max-content 1fr 1fr;
+      padding-block-start: 88px;
+      column-gap: 32px;
     }
   }
 
@@ -36,6 +38,10 @@
   &__blob {
     inline-size: 200px;
     fill: var(--color-primary);
+
+    @include mixin.respond(tablet) {
+      inline-size: 270px;
+    }
 
     &-img {
       inline-size: 170px;
@@ -76,9 +82,17 @@
   & &__scroll {
     display: none;
 
+    @include mixin.respond(tablet) {
+      display: block;
+    }
+
     &-button {
       color: var(--color-primary);
       transition: 0.3s;
+
+      @include mixin.respond(tablet) {
+        margin-inline-start: 48px;
+      }
 
       &:hover {
         transform: translateY(0.25rem);

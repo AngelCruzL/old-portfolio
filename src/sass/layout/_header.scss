@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as mixin;
+
 .header {
   position: fixed;
   inline-size: 100%;
@@ -5,4 +7,10 @@
   inset-inline-start: 0;
   z-index: var(--z-fixed);
   background: var(--color-body);
+
+  @include mixin.respond(tablet) {
+    inset-block-start: 0;
+    inset-block-end: initial;
+    padding-block: var(--gap-0-5);
+  }
 }

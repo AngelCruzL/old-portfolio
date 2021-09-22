@@ -2,6 +2,8 @@
 
 .about {
   &__container {
+    margin-block-start: var(--gap-3);
+
     @include mixin.respond(tablet) {
       grid-template-columns: repeat(2, 1fr);
       column-gap: var(--gap-3-5);
