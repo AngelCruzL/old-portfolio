@@ -1,0 +1,52 @@
+@use '../abstracts/mixins' as mixin;
+
+.skills {
+  &__container {
+    margin-block-start: var(--gap-3);
+
+    @include mixin.respond(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .uil:first-of-type {
+    transform: rotate(-90deg);
+  }
+
+  & &__close {
+    .uil:first-of-type {
+      transform: rotate(0deg);
+    }
+  }
+
+  details {
+    margin-inline: auto;
+
+    summary {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--gap-0-5);
+      font-size: var(--headline-3);
+      font-weight: var(--font-bold);
+      color: var(--color-title);
+
+      .uil {
+        &:first-of-type {
+          font-size: var(--headline-2);
+        }
+
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  ul {
+    margin-inline-start: -3.6rem;
+
+    li {
+      &:not(:last-of-type) {
+        margin-block-end: var(--gap-0-75);
+      }
+    }
+  }
+}
