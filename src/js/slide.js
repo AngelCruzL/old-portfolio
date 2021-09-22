@@ -3,9 +3,10 @@ const $sliderContainer = document.querySelector('.slider__container');
 const data = {
   projects: [
     {
-      imageAvif: './src/img/omnifood.avif',
-      imageWebp: './src/img/omnifood.webp',
-      image: './src/img/omnifood.png',
+      imageWebp:
+        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/omnifood.webp?token=AOEEXY4C6GAHIE6PDOS73DTBKTXLS',
+      image:
+        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/omnifood.png?token=AOEEXY5SA2SCYKQEDKOKQCLBKTXK6',
       alt: 'Omnifood',
       title: 'Omnifood',
       previewDescription:
@@ -15,9 +16,10 @@ const data = {
       url: 'https://github.com/AngelCruzL/omnifood',
     },
     {
-      imageAvif: './src/img/natours.avif',
-      imageWebp: './src/img/natours.webp',
-      image: './src/img/natours.png',
+      imageWebp:
+        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/natours.webp?token=AOEEXY6CBRKZSIM3PYCQFO3BKTW3A',
+      image:
+        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/natours.png?token=AOEEXY2MHB3OBMRCE2MLRCDBKTXCM',
       alt: 'Natours',
       title: 'Natours',
       previewDescription:
@@ -27,9 +29,10 @@ const data = {
       url: 'https://github.com/AngelCruzL/omnifood',
     },
     {
-      imageAvif: './src/img/react-calendar.avif',
-      imageWebp: './src/img/react-calendar.webp',
-      image: './src/img/react-calendar.png',
+      imageWebp:
+        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/react-calendar.webp?token=AOEEXY2OHNOPSYSRLOQMWNLBKTXO6',
+      image:
+        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/react-calendar.png?token=AOEEXY4TPGAAYJG72V3OREDBKTXNK',
       alt: 'Custom Calendar',
       title: 'Custom Calendar',
       previewDescription:
@@ -39,9 +42,10 @@ const data = {
       url: 'https://github.com/AngelCruzL/omnifood',
     },
     {
-      imageAvif: './src/img/react-calendar.avif',
-      imageWebp: './src/img/react-calendar.webp',
-      image: './src/img/react-calendar.png',
+      imageWebp:
+        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/react-calendar.webp?token=AOEEXY2OHNOPSYSRLOQMWNLBKTXO6',
+      image:
+        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/react-calendar.png?token=AOEEXY4TPGAAYJG72V3OREDBKTXNK',
       alt: 'Calendar Backend',
       title: 'Calendar Backend',
       previewDescription:
@@ -54,8 +58,7 @@ const data = {
 };
 
 data.projects.forEach((slide, i) => {
-  const { imageAvif, imageWebp, image, alt, title, previewDescription, url } =
-    slide;
+  const { imageWebp, image, alt, title, previewDescription, url } = slide;
 
   $sliderContainer.insertAdjacentHTML(
     'beforeend',
@@ -64,7 +67,6 @@ data.projects.forEach((slide, i) => {
           <div class="card-container">
             <div class="card">
               <picture>
-                <source srcset="${imageAvif}" type="image/avif">
                 <source srcset="${imageWebp}" type="image/webp">
                 <img
                 src="${image}"
