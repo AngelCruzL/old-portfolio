@@ -15,7 +15,7 @@ async function getData() {
 
 function createSlides({ projects }) {
   projects.forEach((slide, i) => {
-    const { image, alt, title, previewDescription, description } = slide;
+    const { image, alt, title, previewDescription, url } = slide;
 
     $sliderContainer.insertAdjacentHTML(
       'beforeend',
@@ -33,7 +33,7 @@ function createSlides({ projects }) {
                 <p class="card__description">
                 ${previewDescription}
                 </p>
-                <button class="card__button">Ver más</button>
+                <a href="${url}" target="_blank" class="button button--center">Ver más</a>
               </div>
             </div>
           </div>
@@ -42,3 +42,5 @@ function createSlides({ projects }) {
     );
   });
 }
+
+// <button class="card__button">Ver más</button>;
