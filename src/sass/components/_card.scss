@@ -22,6 +22,8 @@
   }
 
   &__image {
+    display: block;
+    block-size: 100%;
     align-self: stretch;
     object-fit: cover;
     object-position: left;
