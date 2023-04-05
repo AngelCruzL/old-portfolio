@@ -7,6 +7,11 @@
     scroll-behavior: smooth;
     white-space: nowrap;
     font-size: 0;
+    max-block-size: 700px;
+
+    @media screen and (min-width: 768px) {
+      max-block-size: 300px;
+    }
   }
 
   &__slide {

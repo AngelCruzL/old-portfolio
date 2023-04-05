@@ -5,6 +5,7 @@
   display: grid;
   margin-inline: auto;
   max-inline-size: 650px;
+  max-block-size: 700px;
   border-radius: 1.2rem;
   background: var(--slider-color);
   box-shadow: 0 -0 15px 1px rgba(0, 0, 0, 0.05);
@@ -12,6 +13,7 @@
 
   @include mixin.respond(tablet) {
     grid-template-columns: repeat(2, 1fr);
+    max-block-size: 300px;
   }
 
   &__data {
@@ -23,10 +25,15 @@
 
   &__image {
     display: block;
-    block-size: 100%;
+    block-size: 400px;
+    aspect-ratio: 16/9;
     align-self: stretch;
     object-fit: cover;
     object-position: left;
+
+    @include mixin.respond(tablet) {
+      block-size: 300px;
+    }
   }
 
   &__title {
@@ -36,7 +43,7 @@
 
   &__description {
     display: inline-block;
-    block-size: 10.5rem;
+    block-size: 105px;
     font-size: var(--small-font);
     text-overflow: ellipsis;
     overflow: hidden;
