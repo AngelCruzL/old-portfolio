@@ -4,9 +4,9 @@ const data = {
   projects: [
     {
       imageWebp:
-        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/omnifood.webp?token=AOEEXY4C6GAHIE6PDOS73DTBKTXLS',
+        'https://raw.githubusercontent.com/AngelCruzL/old-portfolio/main/src/img/omnifood.webp?token=AOEEXY4C6GAHIE6PDOS73DTBKTXLS',
       image:
-        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/omnifood.png?token=AOEEXY5SA2SCYKQEDKOKQCLBKTXK6',
+        'https://raw.githubusercontent.com/AngelCruzL/old-portfolio/main/src/img/omnifood.png?token=AOEEXY5SA2SCYKQEDKOKQCLBKTXK6',
       alt: 'Omnifood',
       title: 'Omnifood',
       previewDescription:
@@ -17,42 +17,42 @@ const data = {
     },
     {
       imageWebp:
-        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/natours.webp?token=AOEEXY6CBRKZSIM3PYCQFO3BKTW3A',
+        'https://raw.githubusercontent.com/AngelCruzL/old-portfolio/main/src/img/natours.webp?token=AOEEXY6CBRKZSIM3PYCQFO3BKTW3A',
       image:
-        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/natours.png?token=AOEEXY2MHB3OBMRCE2MLRCDBKTXCM',
+        'https://raw.githubusercontent.com/AngelCruzL/old-portfolio/main/src/img/natours.png?token=AOEEXY2MHB3OBMRCE2MLRCDBKTXCM',
       alt: 'Natours',
       title: 'Natours',
       previewDescription:
         'Natours es una agencia de viajes que ofrece servicios de tours en distintos lugares, en esta landing page se pueden ver características del servicio.',
       description:
         ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente autem ducimus accusamus architecto.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente autem ducimus accusamus architecto.',
-      url: 'https://github.com/AngelCruzL/omnifood',
+      url: 'https://github.com/AngelCruzL/natours',
     },
     {
       imageWebp:
-        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/react-calendar.webp?token=AOEEXY2OHNOPSYSRLOQMWNLBKTXO6',
+        'https://raw.githubusercontent.com/AngelCruzL/old-portfolio/main/src/img/react-calendar.webp?token=AOEEXY2OHNOPSYSRLOQMWNLBKTXO6',
       image:
-        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/react-calendar.png?token=AOEEXY4TPGAAYJG72V3OREDBKTXNK',
+        'https://raw.githubusercontent.com/AngelCruzL/old-portfolio/main/src/img/react-calendar.png?token=AOEEXY4TPGAAYJG72V3OREDBKTXNK',
       alt: 'Custom Calendar',
       title: 'Custom Calendar',
       previewDescription:
         'Esta aplicación similar a Google calendar permite observar eventos de las personas que estén registrados en ella, pensada para agendar eventos dentro de equipos de trabajo.',
       description:
         ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente autem ducimus accusamus architecto.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente autem ducimus accusamus architecto.',
-      url: 'https://github.com/AngelCruzL/omnifood',
+      url: 'https://github.com/AngelCruzL/tsx-calendar',
     },
     {
       imageWebp:
-        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/react-calendar.webp?token=AOEEXY2OHNOPSYSRLOQMWNLBKTXO6',
+        'https://raw.githubusercontent.com/AngelCruzL/old-portfolio/main/src/img/react-calendar.webp?token=AOEEXY2OHNOPSYSRLOQMWNLBKTXO6',
       image:
-        'https://raw.githubusercontent.com/AngelCruzL/portfolio/main/src/img/react-calendar.png?token=AOEEXY4TPGAAYJG72V3OREDBKTXNK',
+        'https://raw.githubusercontent.com/AngelCruzL/old-portfolio/main/src/img/react-calendar.png?token=AOEEXY4TPGAAYJG72V3OREDBKTXNK',
       alt: 'Calendar Backend',
       title: 'Calendar Backend',
       previewDescription:
         'Esta es la parte de backend de la aplicación Custom Calendar, no cuenta con una parte visual, pero es posible ver el código fuente del proyecto.',
       description:
         ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente autem ducimus accusamus architecto.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente autem ducimus accusamus architecto.',
-      url: 'https://github.com/AngelCruzL/omnifood',
+      url: 'https://github.com/AngelCruzL/nts-calendar',
     },
   ],
 };
